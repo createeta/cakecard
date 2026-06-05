@@ -21,22 +21,17 @@ function setCursorDefault() {
 }
 
 /* ═══════════════════════════════════════
-   INTERACTIVE STICKERS TOGGLE
+   INTERACTIVE STICKERS CLICK
 ═══════════════════════════════════════ */
 function handleStickerClick(event, id) {
   event.stopPropagation();
-  const circle = document.getElementById(`sticker-c-${id}`);
-  const text = document.getElementById(`sticker-t-${id}`);
-  if (circle && text) {
-    circle.classList.toggle('active');
-    text.classList.toggle('active');
-    const r = document.createElement('div');
-    r.className = 'ripple sage';
-    r.style.left = event.clientX + 'px';
-    r.style.top  = event.clientY + 'px';
-    document.body.appendChild(r);
-    setTimeout(() => r.remove(), 750);
-  }
+  // Create click ripple at the sticker coordinate (using clientX and clientY)
+  const r = document.createElement('div');
+  r.className = 'ripple sage';
+  r.style.left = event.clientX + 'px';
+  r.style.top  = event.clientY + 'px';
+  document.body.appendChild(r);
+  setTimeout(() => r.remove(), 750);
 }
 
 /* ═══════════════════════════════════════

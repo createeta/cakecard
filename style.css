@@ -186,14 +186,13 @@ body {
   stroke-width: 0.85;
   transition: fill 0.35s ease, stroke 0.35s ease;
 }
-.sticker-circle.active {
+.sticker-group:hover .sticker-circle {
   fill: #b2d3c2 !important;
   stroke: #8aad8a;
-  opacity: 1 !important;
 }
 .sticker-text {
   font-family: 'Space Mono', monospace;
-  font-size: 7.5px;
+  font-size: 9px;
   font-weight: 700;
   fill: #111;
   pointer-events: none;
@@ -201,18 +200,8 @@ body {
   dominant-baseline: central;
   transition: fill 0.35s ease;
 }
-.sticker-text.active {
+.sticker-group:hover .sticker-text {
   fill: #1a4a34 !important;
-}
-
-/* ── ASCII ART BACKDROP ── */
-.ascii-bg {
-  font-family: 'Space Mono', monospace;
-  font-size: 7px;
-  line-height: 1.1;
-  fill: rgba(17,17,17,0.06);
-  user-select: none;
-  pointer-events: none;
 }
 
 /* ── VIEWPORT FRAMES ── */

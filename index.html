@@ -30,7 +30,7 @@
 ══════════════════════════════ -->
 <div class="left">
 
-  <div class="left-idx">p. 01</div>
+  <div class="left-idx">p. 01 &nbsp;·&nbsp; anne</div>
 
   <!-- click the candle — above cake -->
   <div class="candle-hint" id="candle-hint">✦ click the candle ✦</div>
@@ -55,7 +55,7 @@
       </defs>
 
       <!-- ── PLATE: clean natural ellipse ── -->
-      <!-- solid white fill so nothing bleeds through -->  
+      <!-- solid white fill so nothing bleeds through -->
       <ellipse cx="140" cy="275" rx="128" ry="12"
                fill="rgba(248,248,246,0.97)" stroke="none"/>
       <!-- left side connector: cake corner → plate rim (smooth curve) -->
@@ -175,70 +175,140 @@
 
 
 <!-- ══════════════════════════════
-     RIGHT PANEL — geometric editorial layout with viewports and ASCII bg
+     RIGHT PANEL — geometric editorial layout with viewports (no ASCII bg)
 ══════════════════════════════ -->
 <div class="right">
 
   <svg class="map-svg" viewBox="0 0 540 780"
        preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- ══ ASCII ART BACKDROP ══ -->
-    <text x="20" y="30" class="ascii-bg" xml:space="preserve">
-      <tspan x="20" dy="1.2em">          _._                                         _._</tspan>
-      <tspan x="20" dy="1.2em">        .-"   "-.                                   .-"   "-.</tspan>
-      <tspan x="20" dy="1.2em">       /         \                                 /         \</tspan>
-      <tspan x="20" dy="1.2em">      |   (_)     |       .-----------------.     |   (_)     |</tspan>
-      <tspan x="20" dy="1.2em">      |           |      /                   \    |           |</tspan>
-      <tspan x="20" dy="1.2em">  .---L-----------J---.  |   [BLUEPRINT]     | .--L-----------J---.</tspan>
-      <tspan x="20" dy="1.2em"> /     \         /     \  \                 / /     \         /     \</tspan>
-      <tspan x="20" dy="1.2em">|       `-------'       |  '---------------' |       `-------'       |</tspan>
-      <tspan x="20" dy="1.2em">|   _               _   |                    |   _               _   |</tspan>
-      <tspan x="20" dy="1.2em">|  (_)             (_)  |                    |  (_)             (_)  |</tspan>
-      <tspan x="20" dy="1.2em"> \     _         _     /                      \     _         _     /</tspan>
-      <tspan x="20" dy="1.2em">  `---/-\-------/-\---'                        `---/-\-------/-\---'</tspan>
-      <tspan x="20" dy="1.2em">     |   `-----'   |                              |   `-----'   |</tspan>
-      <tspan x="20" dy="1.2em">     \             /                              \             /</tspan>
-      <tspan x="20" dy="1.2em">      `-----------'                                `-----------'</tspan>
-      <tspan x="20" dy="1.2em">=====================================================================</tspan>
-      <tspan x="20" dy="1.2em">  S E C T I O N   A N A L Y S I S  //  S C H E M A T I C   V I E W S</tspan>
-      <tspan x="20" dy="1.2em">=====================================================================</tspan>
-      <tspan x="20" dy="1.2em">    [01] TOPOLOGY         [02] MATRIX FLOW      [03] FLAME SPECTRUM</tspan>
-      <tspan x="20" dy="1.2em">    [04] ISOMETRIC LAYER  [05] RIM CONNECTION   [06] WAVE PROPAGATION</tspan>
-      <tspan x="20" dy="1.2em">---------------------------------------------------------------------</tspan>
-      <tspan x="20" dy="1.2em">  x: 0148.2 · y: 0270.0  |  theta: 045.00 deg  |  scale: 250% zoom</tspan>
-      <tspan x="20" dy="1.2em">  x: 0214.0 · y: 0270.0  |  theta: 135.00 deg  |  scale: 400% zoom</tspan>
-      <tspan x="20" dy="1.2em">  x: 0140.0 · y: 0070.0  |  theta: 090.00 deg  |  scale: 800% zoom</tspan>
-      <tspan x="20" dy="1.2em">---------------------------------------------------------------------</tspan>
-      <tspan x="20" dy="1.2em">       .---.                 .---.                 .---.     </tspan>
-      <tspan x="20" dy="1.2em">      /     \               /     \               /     \    </tspan>
-      <tspan x="20" dy="1.2em">      \_____/               \_____/               \_____/    </tspan>
-      <tspan x="20" dy="1.2em">      (_____)               (_____)               (_____)    </tspan>
-      <tspan x="20" dy="1.2em">      (_____)               (_____)               (_____)    </tspan>
-      <tspan x="20" dy="1.2em">     /       \             /       \             /       \   </tspan>
-      <tspan x="20" dy="1.2em">    |________|             |________|             |________|  </tspan>
-      <tspan x="20" dy="1.2em">=====================================================================</tspan>
-      <tspan x="20" dy="1.2em">                  C A K E   B O D Y   S P E C T R A</tspan>
-      <tspan x="20" dy="1.2em">=====================================================================</tspan>
-      <tspan x="20" dy="1.2em">   .-------------------------------------------------------------.   </tspan>
-      <tspan x="20" dy="1.2em">  /                                                             \  </tspan>
-      <tspan x="20" dy="1.2em"> |   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #   | </tspan>
-      <tspan x="20" dy="1.2em"> |   #   L A Y E R   0 3   :   [ D O T - M A T R I X ]   #   | </tspan>
-      <tspan x="20" dy="1.2em"> |   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #   | </tspan>
-      <tspan x="20" dy="1.2em"> |-------------------------------------------------------------| </tspan>
-      <tspan x="20" dy="1.2em"> |   * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   | </tspan>
-      <tspan x="20" dy="1.2em"> |   *   L A Y E R   0 2   :   [ C R E A M - P A T H ]   *   | </tspan>
-      <tspan x="20" dy="1.2em"> |   * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   | </tspan>
-      <tspan x="20" dy="1.2em"> |-------------------------------------------------------------| </tspan>
-      <tspan x="20" dy="1.2em"> |   + + + + + + + + + + + + + + + + + + + + + + + + + + + + +   | </tspan>
-      <tspan x="20" dy="1.2em"> |   +   L A Y E R   0 1   :   [ B A S E - P L A T E ]   +   | </tspan>
-      <tspan x="20" dy="1.2em"> |   + + + + + + + + + + + + + + + + + + + + + + + + + + + + +   | </tspan>
-      <tspan x="20" dy="1.2em">  \_____________________________________________________________/  </tspan>
-    </text>
+    <!-- ══ VERTICAL PUNCH STRIP (Birthday Girl) ══ -->
+    <g transform="translate(12, 330)" opacity="0.65">
+      <line x1="0" y1="0" x2="0" y2="150" stroke="#111" stroke-width="0.5" stroke-dasharray="1 3"/>
+      <circle cx="0" cy="10" r="1.5" fill="#111"/>
+      <text x="8" y="13" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">B</text>
+      <circle cx="0" cy="30" r="1.5" fill="#111"/>
+      <text x="8" y="33" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">I</text>
+      <circle cx="0" cy="50" r="1.5" fill="#111"/>
+      <text x="8" y="53" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">R</text>
+      <circle cx="0" cy="70" r="1.5" fill="#7bc8bc"/>
+      <text x="8" y="73" font-family="'Space Mono', monospace" font-size="7.5" fill="#7bc8bc" font-weight="700">✦</text>
+      <circle cx="0" cy="90" r="1.5" fill="#111"/>
+      <text x="8" y="93" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">G</text>
+      <circle cx="0" cy="110" r="1.5" fill="#111"/>
+      <text x="8" y="113" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">I</text>
+      <circle cx="0" cy="130" r="1.5" fill="#111"/>
+      <text x="8" y="133" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">R</text>
+      <circle cx="0" cy="150" r="1.5" fill="#111"/>
+      <text x="8" y="153" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">L</text>
+    </g>
 
-    <!-- ══ VIEWPORTS ══ -->
+    <!-- ══ WORD SEARCH PUZZLE (Birthday Girl) ══ -->
+    <g transform="translate(415, 110)">
+      <text x="0" y="-8" font-family="'Space Mono', monospace" font-size="5.5" font-weight="700" fill="#111" opacity="0.6">WORD SEARCH // BDG-01</text>
+      <circle cx="-10" cy="9" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
+      <circle cx="-10" cy="27" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
+      <circle cx="-10" cy="45" r="1.8" fill="#7bc8bc" opacity="0.4"/>
+      <circle cx="-10" cy="63" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
+      <circle cx="-10" cy="81" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
+
+      <!-- Row 0: B I R T H -->
+      <rect x="0" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="9" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">B</text>
+      <circle cx="9" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <rect x="18" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="27" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">I</text>
+      <circle cx="27" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <rect x="36" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="45" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">R</text>
+      <circle cx="45" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <rect x="54" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="63" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">T</text>
+      <circle cx="63" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <rect x="72" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="81" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">H</text>
+      <circle cx="81" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <!-- Row 1: D A Y . G -->
+      <rect x="0" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="9" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">D</text>
+      <circle cx="9" cy="27" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <rect x="18" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="27" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">A</text>
+      <circle cx="27" cy="27" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <rect x="36" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="45" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">Y</text>
+      <circle cx="45" cy="27" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+
+      <rect x="54" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="63" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">·</text>
+
+      <rect x="72" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="81" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">G</text>
+      <circle cx="81" cy="27" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
+
+      <!-- Row 2: I R L . ✦ -->
+      <rect x="0" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="9" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">I</text>
+      <circle cx="9" cy="45" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
+
+      <rect x="18" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="27" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">R</text>
+      <circle cx="27" cy="45" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
+
+      <rect x="36" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="45" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">L</text>
+      <circle cx="45" cy="45" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
+
+      <rect x="54" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="63" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">·</text>
+
+      <rect x="72" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="81" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#7bc8bc" text-anchor="middle" dominant-baseline="central">✦</text>
+
+      <!-- Row 3: ✦ B I R T -->
+      <rect x="0" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="9" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#8aad8a" text-anchor="middle" dominant-baseline="central">✦</text>
+
+      <rect x="18" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="27" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">B</text>
+
+      <rect x="36" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="45" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">I</text>
+
+      <rect x="54" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="63" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">R</text>
+
+      <rect x="72" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="81" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">T</text>
+
+      <!-- Row 4: H D A Y · -->
+      <rect x="0" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="9" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">H</text>
+
+      <rect x="18" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="27" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">D</text>
+
+      <rect x="36" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="45" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">A</text>
+
+      <rect x="54" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="63" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">Y</text>
+
+      <rect x="72" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <text x="81" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">·</text>
+    </g>
+
+    <!-- ══ VIEWPORTS (Y-shifted & Enlarged) ══ -->
 
     <!-- Viewport 01 (Top View topology) -->
-    <svg x="40" y="50" width="130" height="130" viewBox="0 0 100 100" class="viewport-box">
+    <svg x="30" y="110" width="150" height="150" viewBox="0 0 100 100" class="viewport-box">
       <rect x="0" y="0" width="100" height="100" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="100" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="100" class="viewport-grid"/>
@@ -263,7 +333,7 @@
     </svg>
 
     <!-- Viewport 02 (Cross-section layers) -->
-    <svg x="210" y="90" width="150" height="110" viewBox="0 0 120 88" class="viewport-box">
+    <svg x="220" y="150" width="170" height="125" viewBox="0 0 120 88" class="viewport-box">
       <rect x="0" y="0" width="120" height="88" class="viewport-frame"/>
       <line x1="30" y1="0" x2="30" y2="88" class="viewport-grid"/>
       <line x1="60" y1="0" x2="60" y2="88" class="viewport-grid"/>
@@ -318,7 +388,7 @@
     </svg>
 
     <!-- Viewport 03 (Candle & Flame) -->
-    <svg x="40" y="220" width="110" height="160" viewBox="0 0 100 145" class="viewport-box">
+    <svg x="30" y="300" width="130" height="188" viewBox="0 0 100 145" class="viewport-box">
       <rect x="0" y="0" width="100" height="145" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="145" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="145" class="viewport-grid"/>
@@ -333,11 +403,11 @@
       <line x1="40" y1="130" x2="60" y2="130" stroke="#7bc8bc" stroke-width="0.5"/>
       <line x1="50" y1="90" x2="50" y2="76" stroke="#111" stroke-width="1.2"/>
       <circle cx="50" cy="76" r="1.5" fill="#111"/>
-      <path d="M50 76 C42 66 38 52 40 38 C43 30 47 22 50 15 C53 22 57 30 60 38 C62 52 58 66 50 76Z" 
+      <path d="M50 76 C42 66 38 52 40 38 C43 30 47 22 50 15 C53 22 57 30 60 38 C62 52 58 66 50 76Z"
             fill="none" stroke="#8aad8a" stroke-width="0.75" opacity="0.65"/>
-      <path d="M50 74 C45 65 42 54 44 41 C46 34 48 26 50 20 C52 26 54 34 56 41 C58 54 55 65 50 74Z" 
+      <path d="M50 74 C45 65 42 54 44 41 C46 34 48 26 50 20 C52 26 54 34 56 41 C58 54 55 65 50 74Z"
             fill="none" stroke="#7bc8bc" stroke-width="0.75" opacity="0.8"/>
-      <path d="M50 71 C47 64 45 56 46 45 C47 40 49 35 50 28 C51 35 53 40 54 45 C55 56 53 64 50 71Z" 
+      <path d="M50 71 C47 64 45 56 46 45 C47 40 49 35 50 28 C51 35 53 40 54 45 C55 56 53 64 50 71Z"
             fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
       <circle cx="36" cy="30" r="1" fill="#7bc8bc" opacity="0.7"/>
       <circle cx="64" cy="42" r="1" fill="#8aad8a" opacity="0.7"/>
@@ -347,7 +417,7 @@
     </svg>
 
     <!-- Viewport 04 (Isometric perspective) -->
-    <svg x="350" y="240" width="150" height="150" viewBox="0 0 100 100" class="viewport-box">
+    <svg x="340" y="320" width="170" height="170" viewBox="0 0 100 100" class="viewport-box">
       <rect x="0" y="0" width="100" height="100" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="100" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="100" class="viewport-grid"/>
@@ -376,7 +446,7 @@
     </svg>
 
     <!-- Viewport 05 (Corner & Plate Connect) -->
-    <svg x="210" y="440" width="130" height="130" viewBox="0 0 100 100" class="viewport-box">
+    <svg x="200" y="530" width="150" height="150" viewBox="0 0 100 100" class="viewport-box">
       <rect x="0" y="0" width="100" height="100" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="100" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="100" class="viewport-grid"/>
@@ -397,7 +467,7 @@
     </svg>
 
     <!-- Viewport 06 (Flame thermal/wave propagation) -->
-    <svg x="70" y="430" width="110" height="140" viewBox="0 0 100 127" class="viewport-box">
+    <svg x="50" y="520" width="130" height="165" viewBox="0 0 100 127" class="viewport-box">
       <rect x="0" y="0" width="100" height="127" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="127" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="127" class="viewport-grid"/>
@@ -416,7 +486,7 @@
     </svg>
 
     <!-- Viewport 07 (Topping Zoom) -->
-    <svg x="330" y="490" width="160" height="120" viewBox="0 0 130 98" class="viewport-box">
+    <svg x="340" y="530" width="186" height="140" viewBox="0 0 130 98" class="viewport-box">
       <rect x="0" y="0" width="130" height="98" class="viewport-frame"/>
       <line x1="32.5" y1="0" x2="32.5" y2="98" class="viewport-grid"/>
       <line x1="65" y1="0" x2="65" y2="98" class="viewport-grid"/>
@@ -437,55 +507,55 @@
     <g id="interactive-stickers">
       <!-- Connection Lines between stickers -->
       <g stroke="#111" stroke-width="0.55" opacity="0.28" fill="none">
-        <line x1="170" y1="180" x2="360" y2="200" />
-        <line x1="360" y1="200" x2="350" y2="240" />
-        <line x1="350" y1="240" x2="490" y2="610" />
-        <line x1="490" y1="610" x2="340" y2="570" />
-        <line x1="340" y1="570" x2="70" y2="430" />
-        <line x1="70" y1="430" x2="150" y2="380" />
-        <line x1="150" y1="380" x2="170" y2="180" />
+        <line x1="180" y1="260" x2="390" y2="275" />
+        <line x1="390" y1="275" x2="340" y2="320" />
+        <line x1="340" y1="320" x2="526" y2="670" />
+        <line x1="526" y1="670" x2="350" y2="680" />
+        <line x1="350" y1="680" x2="50" y2="520" />
+        <line x1="50" y1="520" x2="160" y2="488" />
+        <line x1="160" y1="488" x2="180" y2="260" />
       </g>
 
       <!-- Sticker 01 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '01')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-01" class="sticker-circle" cx="170" cy="180" r="10"/>
-        <text id="sticker-t-01" class="sticker-text" x="170" y="180">01</text>
+        <circle id="sticker-c-01" class="sticker-circle" cx="180" cy="260" r="12.5"/>
+        <text id="sticker-t-01" class="sticker-text" x="180" y="260">01</text>
       </g>
 
       <!-- Sticker 02 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '02')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-02" class="sticker-circle" cx="360" cy="200" r="10"/>
-        <text id="sticker-t-02" class="sticker-text" x="360" y="200">02</text>
+        <circle id="sticker-c-02" class="sticker-circle" cx="390" cy="275" r="12.5"/>
+        <text id="sticker-t-02" class="sticker-text" x="390" y="275">02</text>
       </g>
 
       <!-- Sticker 03 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '03')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-03" class="sticker-circle" cx="150" cy="380" r="10"/>
-        <text id="sticker-t-03" class="sticker-text" x="150" y="380">03</text>
+        <circle id="sticker-c-03" class="sticker-circle" cx="160" cy="488" r="12.5"/>
+        <text id="sticker-t-03" class="sticker-text" x="160" y="488">03</text>
       </g>
 
       <!-- Sticker 04 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '04')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-04" class="sticker-circle" cx="350" cy="240" r="10"/>
-        <text id="sticker-t-04" class="sticker-text" x="350" y="240">04</text>
+        <circle id="sticker-c-04" class="sticker-circle" cx="340" cy="320" r="12.5"/>
+        <text id="sticker-t-04" class="sticker-text" x="340" y="320">04</text>
       </g>
 
       <!-- Sticker 05 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '05')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-05" class="sticker-circle" cx="340" cy="570" r="10"/>
-        <text id="sticker-t-05" class="sticker-text" x="340" y="570">05</text>
+        <circle id="sticker-c-05" class="sticker-circle" cx="350" cy="680" r="12.5"/>
+        <text id="sticker-t-05" class="sticker-text" x="350" y="680">05</text>
       </g>
 
       <!-- Sticker 06 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '06')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-06" class="sticker-circle" cx="70" cy="430" r="10"/>
-        <text id="sticker-t-06" class="sticker-text" x="70" y="430">06</text>
+        <circle id="sticker-c-06" class="sticker-circle" cx="50" cy="520" r="12.5"/>
+        <text id="sticker-t-06" class="sticker-text" x="50" y="520">06</text>
       </g>
 
       <!-- Sticker 07 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '07')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-07" class="sticker-circle" cx="490" cy="610" r="10"/>
-        <text id="sticker-t-07" class="sticker-text" x="490" y="610">07</text>
+        <circle id="sticker-c-07" class="sticker-circle" cx="526" cy="670" r="12.5"/>
+        <text id="sticker-t-07" class="sticker-text" x="526" y="670">07</text>
       </g>
     </g>
 
