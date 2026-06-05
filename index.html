@@ -30,7 +30,7 @@
 ══════════════════════════════ -->
 <div class="left">
 
-  <div class="left-idx">p. 01 &nbsp;·&nbsp; anne</div>
+  <div class="left-idx">p. 01 &nbsp;·&nbsp; b-daycard.anne</div>
 
   <!-- click the candle — above cake -->
   <div class="candle-hint" id="candle-hint">✦ click the candle ✦</div>
@@ -168,6 +168,9 @@
               fill="none" stroke="#bbb" stroke-width="0.9" stroke-linecap="round" opacity="0.35"/>
       </g>
 
+      <!-- MAKE A WISH — below cake plate -->
+      <text id="make-a-wish-text" x="140" y="316" font-family="'Space Mono', monospace" font-size="10" fill="#111" text-anchor="middle" letter-spacing="4">MAKE A WISH</text>
+
     </svg><!-- /cake svg -->
 
   </div>
@@ -179,137 +182,88 @@
 ══════════════════════════════ -->
 <div class="right">
 
+  <!-- NICKNAME INPUT -->
+  <div id="nickname-wrap">
+    <span id="to-label">TO.</span>
+    <input id="nickname-input" type="text" placeholder="nickname" maxlength="20" autocomplete="off" spellcheck="false">
+  </div>
+  <div id="happy-msg">happy!</div>
+  <div id="congrats-msg">congrats!</div>
+
   <svg class="map-svg" viewBox="0 0 540 780"
        preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- ══ VERTICAL PUNCH STRIP (Birthday Girl) ══ -->
+    <!-- p.02 label — right side, just above nickname input -->
+    <text x="528" y="198" font-family="'Space Mono', monospace" font-size="11" font-weight="500" fill="#111" opacity="0.75" text-anchor="end" letter-spacing="3">p. 02</text>
+
+    <!-- ══ VERTICAL PUNCH STRIP (dots only) ══ -->
     <g transform="translate(12, 330)" opacity="0.65">
       <line x1="0" y1="0" x2="0" y2="150" stroke="#111" stroke-width="0.5" stroke-dasharray="1 3"/>
-      <circle cx="0" cy="10" r="1.5" fill="#111"/>
-      <text x="8" y="13" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">B</text>
-      <circle cx="0" cy="30" r="1.5" fill="#111"/>
-      <text x="8" y="33" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">I</text>
-      <circle cx="0" cy="50" r="1.5" fill="#111"/>
-      <text x="8" y="53" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">R</text>
-      <circle cx="0" cy="70" r="1.5" fill="#7bc8bc"/>
-      <text x="8" y="73" font-family="'Space Mono', monospace" font-size="7.5" fill="#7bc8bc" font-weight="700">✦</text>
-      <circle cx="0" cy="90" r="1.5" fill="#111"/>
-      <text x="8" y="93" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">G</text>
+      <circle cx="0" cy="10"  r="1.5" fill="#111"/>
+      <circle cx="0" cy="30"  r="1.5" fill="#111"/>
+      <circle cx="0" cy="50"  r="1.5" fill="#111"/>
+      <circle cx="0" cy="70"  r="1.5" fill="#7bc8bc"/>
+      <circle cx="0" cy="90"  r="1.5" fill="#111"/>
       <circle cx="0" cy="110" r="1.5" fill="#111"/>
-      <text x="8" y="113" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">I</text>
       <circle cx="0" cy="130" r="1.5" fill="#111"/>
-      <text x="8" y="133" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">R</text>
       <circle cx="0" cy="150" r="1.5" fill="#111"/>
-      <text x="8" y="153" font-family="'Space Mono', monospace" font-size="7.5" fill="#111">L</text>
     </g>
 
-    <!-- ══ WORD SEARCH PUZZLE (Birthday Girl) ══ -->
-    <g transform="translate(415, 110)">
-      <text x="0" y="-8" font-family="'Space Mono', monospace" font-size="5.5" font-weight="700" fill="#111" opacity="0.6">WORD SEARCH // BDG-01</text>
-      <circle cx="-10" cy="9" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
-      <circle cx="-10" cy="27" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
-      <circle cx="-10" cy="45" r="1.8" fill="#7bc8bc" opacity="0.4"/>
-      <circle cx="-10" cy="63" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
-      <circle cx="-10" cy="81" r="1.8" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
+    <!-- ══ SCATTERED WORD ART ══ -->
 
-      <!-- Row 0: B I R T H -->
-      <rect x="0" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="9" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">B</text>
-      <circle cx="9" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+    <!-- Label -->
+    <text x="284" y="51" font-family="'Space Mono', monospace" font-size="5.5" font-weight="700" fill="#111" opacity="0.6">WORD SEARCH // BDG-01</text>
 
-      <rect x="18" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="27" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">I</text>
-      <circle cx="27" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+    <!-- BIRTH — top center-right area -->
+    <g transform="translate(284, 58)">
+      <rect x="0" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="12" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="12" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">B</text>
 
-      <rect x="36" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="45" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">R</text>
-      <circle cx="45" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+      <rect x="24" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="36" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="36" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">I</text>
 
-      <rect x="54" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="63" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">T</text>
-      <circle cx="63" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+      <rect x="48" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="60" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="60" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">R</text>
 
-      <rect x="72" y="0" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="81" y="9" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">H</text>
-      <circle cx="81" cy="9" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
+      <rect x="72" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="84" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="84" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">T</text>
 
-      <!-- Row 1: D A Y . G -->
-      <rect x="0" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="9" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">D</text>
-      <circle cx="9" cy="27" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
-
-      <rect x="18" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="27" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">A</text>
-      <circle cx="27" cy="27" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
-
-      <rect x="36" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="45" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">Y</text>
-      <circle cx="45" cy="27" r="7.2" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.8"/>
-
-      <rect x="54" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="63" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">·</text>
-
-      <rect x="72" y="18" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="81" y="27" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">G</text>
-      <circle cx="81" cy="27" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
-
-      <!-- Row 2: I R L . ✦ -->
-      <rect x="0" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="9" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">I</text>
-      <circle cx="9" cy="45" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
-
-      <rect x="18" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="27" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">R</text>
-      <circle cx="27" cy="45" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
-
-      <rect x="36" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="45" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" text-anchor="middle" dominant-baseline="central">L</text>
-      <circle cx="45" cy="45" r="7.2" fill="rgba(138,173,138,0.18)" stroke="#8aad8a" stroke-width="0.8"/>
-
-      <rect x="54" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="63" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">·</text>
-
-      <rect x="72" y="36" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="81" y="45" font-family="'Space Mono', monospace" font-size="8.5" fill="#7bc8bc" text-anchor="middle" dominant-baseline="central">✦</text>
-
-      <!-- Row 3: ✦ B I R T -->
-      <rect x="0" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="9" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#8aad8a" text-anchor="middle" dominant-baseline="central">✦</text>
-
-      <rect x="18" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="27" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">B</text>
-
-      <rect x="36" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="45" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">I</text>
-
-      <rect x="54" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="63" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">R</text>
-
-      <rect x="72" y="54" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="81" y="63" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">T</text>
-
-      <!-- Row 4: H D A Y · -->
-      <rect x="0" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="9" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">H</text>
-
-      <rect x="18" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="27" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">D</text>
-
-      <rect x="36" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="45" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">A</text>
-
-      <rect x="54" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="63" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">Y</text>
-
-      <rect x="72" y="72" width="18" height="18" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
-      <text x="81" y="81" font-family="'Space Mono', monospace" font-size="8.5" fill="#111" opacity="0.35" text-anchor="middle" dominant-baseline="central">·</text>
+      <rect x="96" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="108" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="108" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">H</text>
     </g>
+
+    <!-- DAY — below BIRTH, centered under it -->
+    <g transform="translate(308, 90)">
+      <rect x="0" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="12" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="12" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">D</text>
+
+      <rect x="24" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="36" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="36" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">A</text>
+
+      <rect x="48" y="0" width="24" height="24" fill="none" stroke="#111" stroke-width="0.35" opacity="0.25"/>
+      <circle cx="60" cy="12" r="9.5" fill="rgba(123,200,188,0.18)" stroke="#7bc8bc" stroke-width="0.9"/>
+      <text x="60" y="12" font-family="'Space Mono', monospace" font-size="11" fill="#111" text-anchor="middle" dominant-baseline="central">Y</text>
+    </g>
+
+
+    <!-- Floating decorative marks -->
+    <text x="410" y="480" font-family="'Space Mono', monospace" font-size="11" fill="#7bc8bc" opacity="0.7" text-anchor="middle">✦</text>
+    <circle cx="405" cy="72" r="2.2" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="405" cy="88" r="2.2" fill="#7bc8bc" opacity="0.4"/>
+    <circle cx="405" cy="104" r="2.2" fill="none" stroke="#111" stroke-width="0.5" opacity="0.4"/>
 
     <!-- ══ VIEWPORTS (Y-shifted & Enlarged) ══ -->
 
     <!-- Viewport 01 (Top View topology) -->
     <svg x="30" y="110" width="150" height="150" viewBox="0 0 100 100" class="viewport-box">
-      <rect x="0" y="0" width="100" height="100" class="viewport-frame"/>
+      <rect id="frame-01" x="0" y="0" width="100" height="100" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="100" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="100" class="viewport-grid"/>
       <line x1="75" y1="0" x2="75" y2="100" class="viewport-grid"/>
@@ -334,7 +288,7 @@
 
     <!-- Viewport 02 (Cross-section layers) -->
     <svg x="220" y="150" width="170" height="125" viewBox="0 0 120 88" class="viewport-box">
-      <rect x="0" y="0" width="120" height="88" class="viewport-frame"/>
+      <rect id="frame-02" x="0" y="0" width="120" height="88" class="viewport-frame"/>
       <line x1="30" y1="0" x2="30" y2="88" class="viewport-grid"/>
       <line x1="60" y1="0" x2="60" y2="88" class="viewport-grid"/>
       <line x1="90" y1="0" x2="90" y2="88" class="viewport-grid"/>
@@ -389,7 +343,7 @@
 
     <!-- Viewport 03 (Candle & Flame) -->
     <svg x="30" y="300" width="130" height="188" viewBox="0 0 100 145" class="viewport-box">
-      <rect x="0" y="0" width="100" height="145" class="viewport-frame"/>
+      <rect id="frame-03" x="0" y="0" width="100" height="145" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="145" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="145" class="viewport-grid"/>
       <line x1="75" y1="0" x2="75" y2="145" class="viewport-grid"/>
@@ -418,7 +372,7 @@
 
     <!-- Viewport 04 (Isometric perspective) -->
     <svg x="340" y="320" width="170" height="170" viewBox="0 0 100 100" class="viewport-box">
-      <rect x="0" y="0" width="100" height="100" class="viewport-frame"/>
+      <rect id="frame-04" x="0" y="0" width="100" height="100" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="100" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="100" class="viewport-grid"/>
       <line x1="75" y1="0" x2="75" y2="100" class="viewport-grid"/>
@@ -447,7 +401,7 @@
 
     <!-- Viewport 05 (Corner & Plate Connect) -->
     <svg x="200" y="530" width="150" height="150" viewBox="0 0 100 100" class="viewport-box">
-      <rect x="0" y="0" width="100" height="100" class="viewport-frame"/>
+      <rect id="frame-05" x="0" y="0" width="100" height="100" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="100" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="100" class="viewport-grid"/>
       <line x1="75" y1="0" x2="75" y2="100" class="viewport-grid"/>
@@ -468,7 +422,7 @@
 
     <!-- Viewport 06 (Flame thermal/wave propagation) -->
     <svg x="50" y="520" width="130" height="165" viewBox="0 0 100 127" class="viewport-box">
-      <rect x="0" y="0" width="100" height="127" class="viewport-frame"/>
+      <rect id="frame-06" x="0" y="0" width="100" height="127" class="viewport-frame"/>
       <line x1="25" y1="0" x2="25" y2="127" class="viewport-grid"/>
       <line x1="50" y1="0" x2="50" y2="127" class="viewport-grid"/>
       <line x1="75" y1="0" x2="75" y2="127" class="viewport-grid"/>
@@ -487,7 +441,7 @@
 
     <!-- Viewport 07 (Topping Zoom) -->
     <svg x="340" y="530" width="186" height="140" viewBox="0 0 130 98" class="viewport-box">
-      <rect x="0" y="0" width="130" height="98" class="viewport-frame"/>
+      <rect id="frame-07" x="0" y="0" width="130" height="98" class="viewport-frame"/>
       <line x1="32.5" y1="0" x2="32.5" y2="98" class="viewport-grid"/>
       <line x1="65" y1="0" x2="65" y2="98" class="viewport-grid"/>
       <line x1="97.5" y1="0" x2="97.5" y2="98" class="viewport-grid"/>
@@ -505,15 +459,15 @@
 
     <!-- ══ INTERACTIVE NUMBERED STICKERS ══ -->
     <g id="interactive-stickers">
-      <!-- Connection Lines between stickers -->
+      <!-- Connection Lines between stickers — 01→02→03→04→05→06→07→01 -->
       <g stroke="#111" stroke-width="0.55" opacity="0.28" fill="none">
-        <line x1="180" y1="260" x2="390" y2="275" />
-        <line x1="390" y1="275" x2="340" y2="320" />
-        <line x1="340" y1="320" x2="526" y2="670" />
-        <line x1="526" y1="670" x2="350" y2="680" />
+        <line x1="180" y1="260" x2="280" y2="290" />
+        <line x1="280" y1="290" x2="160" y2="488" />
+        <line x1="160" y1="488" x2="340" y2="320" />
+        <line x1="340" y1="320" x2="350" y2="680" />
         <line x1="350" y1="680" x2="50" y2="520" />
-        <line x1="50" y1="520" x2="160" y2="488" />
-        <line x1="160" y1="488" x2="180" y2="260" />
+        <line x1="50" y1="520" x2="526" y2="670" />
+        <line x1="526" y1="670" x2="180" y2="260" />
       </g>
 
       <!-- Sticker 01 -->
@@ -524,8 +478,8 @@
 
       <!-- Sticker 02 -->
       <g class="sticker-group" onclick="handleStickerClick(event, '02')" onmouseenter="setCursorAccent()" onmouseleave="setCursorDefault()">
-        <circle id="sticker-c-02" class="sticker-circle" cx="390" cy="275" r="12.5"/>
-        <text id="sticker-t-02" class="sticker-text" x="390" y="275">02</text>
+        <circle id="sticker-c-02" class="sticker-circle" cx="280" cy="290" r="12.5"/>
+        <text id="sticker-t-02" class="sticker-text" x="280" y="290">02</text>
       </g>
 
       <!-- Sticker 03 -->

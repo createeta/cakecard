@@ -54,7 +54,7 @@ body {
   align-items:center;
   justify-content:center;
   position:relative;
-  border-right:0.5px solid rgba(17,17,17,0.1);
+  border-right:1px solid rgba(17,17,17,0.28);
   background-image:
     linear-gradient(rgba(17,17,17,0.042) 1px, transparent 1px),
     linear-gradient(90deg, rgba(17,17,17,0.042) 1px, transparent 1px);
@@ -64,10 +64,10 @@ body {
 .left-idx {
   position:absolute;
   top:2.2rem; left:2.4rem;
-  font-size:0.55rem;
+  font-size:0.62rem;
   letter-spacing:0.28em;
-  font-weight:300;
-  opacity:0.25;
+  font-weight:500;
+  opacity:0.75;
 }
 
 .candle-hint {
@@ -156,6 +156,15 @@ body {
 .sp { animation:smokePuff 1.9s ease-out infinite; }
 #sp2{ animation-delay:-0.65s; }
 
+/* ── MAKE A WISH SHIMMER ── */
+@keyframes makeAWishShimmer {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 0.75; }
+}
+#make-a-wish-text {
+  animation: makeAWishShimmer 3.5s ease-in-out infinite;
+}
+
 #flame-g { transition:opacity 0.28s; }
 #smoke-g { opacity:0; transition:opacity 0.55s; pointer-events:none; }
 #wick-dot{ transition:fill 0.3s; }
@@ -177,6 +186,15 @@ body {
 }
 
 /* ── INTERACTIVE STICKERS ── */
+@keyframes stickerGlow {
+  0%, 100% { stroke-width: 0.85; opacity: 0.6; }
+  50%       { stroke-width: 1.8;  opacity: 0.18; }
+}
+@keyframes stickerTextFade {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 0.14; }
+}
+
 .sticker-group {
   cursor: pointer;
 }
@@ -184,11 +202,8 @@ body {
   fill: rgba(255, 255, 255, 0.01);
   stroke: #111;
   stroke-width: 0.85;
-  transition: fill 0.35s ease, stroke 0.35s ease;
-}
-.sticker-group:hover .sticker-circle {
-  fill: #b2d3c2 !important;
-  stroke: #8aad8a;
+  animation: stickerGlow 2s ease-in-out infinite;
+  transition: fill 0.3s ease, stroke 0.3s ease;
 }
 .sticker-text {
   font-family: 'Space Mono', monospace;
@@ -198,10 +213,31 @@ body {
   pointer-events: none;
   text-anchor: middle;
   dominant-baseline: central;
-  transition: fill 0.35s ease;
+  animation: stickerTextFade 2s ease-in-out infinite;
+  transition: fill 0.3s ease;
 }
-.sticker-group:hover .sticker-text {
-  fill: #1a4a34 !important;
+
+/* stagger each sticker so they don't all pulse in sync */
+#sticker-c-01, #sticker-t-01 { animation-delay: 0s; }
+#sticker-c-02, #sticker-t-02 { animation-delay: -0.29s; }
+#sticker-c-03, #sticker-t-03 { animation-delay: -0.57s; }
+#sticker-c-04, #sticker-t-04 { animation-delay: -0.86s; }
+#sticker-c-05, #sticker-t-05 { animation-delay: -1.14s; }
+#sticker-c-06, #sticker-t-06 { animation-delay: -1.43s; }
+#sticker-c-07, #sticker-t-07 { animation-delay: -1.71s; }
+
+/* click-activated state (hover no longer fills) */
+.sticker-circle.active {
+  animation: none;
+  fill: #b2d3c2;
+  stroke: #8aad8a;
+  stroke-width: 0.85;
+  opacity: 1;
+}
+.sticker-text.active {
+  animation: none;
+  fill: #1a4a34;
+  opacity: 1;
 }
 
 /* ── VIEWPORT FRAMES ── */
@@ -209,6 +245,85 @@ body {
   fill: none;
   stroke: #111;
   stroke-width: 0.75;
+  transition: stroke 0.5s ease, stroke-width 0.5s ease;
+}
+.viewport-frame.mint-active {
+  stroke: #7bc8bc;
+  stroke-width: 2;
+}
+
+/* ── NICKNAME INPUT ── */
+#nickname-wrap {
+  position: absolute;
+  top: 28%;
+  right: 1.8rem;
+  z-index: 10;
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+#to-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #111;
+  opacity: 0.65;
+}
+#nickname-input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.7px solid rgba(17,17,17,0.28);
+  outline: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  color: #111;
+  width: 110px;
+  padding: 3px 0;
+  cursor: text !important;
+}
+#nickname-input::placeholder {
+  color: #111;
+  opacity: 0.28;
+}
+#nickname-input:focus {
+  border-bottom-color: #7bc8bc;
+}
+
+/* ── HAPPY MESSAGE ── */
+#happy-msg {
+  position: absolute;
+  top: calc(28% + 1.6rem);
+  right: 1.8rem;
+  z-index: 10;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  color: #7bc8bc;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease;
+}
+#happy-msg.visible {
+  opacity: 1;
+}
+
+#congrats-msg {
+  position: absolute;
+  top: calc(28% + 2.8rem);
+  right: 1.8rem;
+  z-index: 10;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  color: #8aad8a;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease;
+}
+#congrats-msg.visible {
+  opacity: 1;
 }
 .viewport-grid {
   stroke: #111;

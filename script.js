@@ -25,7 +25,16 @@ function setCursorDefault() {
 ═══════════════════════════════════════ */
 function handleStickerClick(event, id) {
   event.stopPropagation();
-  // Create click ripple at the sticker coordinate (using clientX and clientY)
+  const circle = document.getElementById(`sticker-c-${id}`);
+  const text   = document.getElementById(`sticker-t-${id}`);
+  const frame  = document.getElementById(`frame-${id}`);
+  if (circle && text) {
+    const isActive = circle.classList.toggle('active');
+    text.classList.toggle('active');
+    if (frame) {
+      isActive ? frame.classList.add('mint-active') : frame.classList.remove('mint-active');
+    }
+  }
   const r = document.createElement('div');
   r.className = 'ripple sage';
   r.style.left = event.clientX + 'px';
@@ -33,6 +42,36 @@ function handleStickerClick(event, id) {
   document.body.appendChild(r);
   setTimeout(() => r.remove(), 750);
 }
+
+/* ═══════════════════════════════════════
+   NICKNAME INPUT — activate viewport mint borders
+═══════════════════════════════════════ */
+document.getElementById('nickname-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === ' ') e.preventDefault();
+    if (e.target.value.trim().length > 0) {
+      // 1. 전부 리셋 (페이드아웃·원상태)
+      document.querySelectorAll('.viewport-frame').forEach(el => el.classList.remove('mint-active'));
+      ['01','02','03','04','05','06','07'].forEach(id => {
+        document.getElementById(`sticker-c-${id}`)?.classList.remove('active');
+        document.getElementById(`sticker-t-${id}`)?.classList.remove('active');
+      });
+      document.getElementById('happy-msg')?.classList.remove('visible');
+      document.getElementById('congrats-msg')?.classList.remove('visible');
+
+      // 2. 리셋 모션이 보인 뒤 재활성화
+      setTimeout(() => {
+        document.querySelectorAll('.viewport-frame').forEach(el => el.classList.add('mint-active'));
+        ['01','02','03','04','05','06','07'].forEach(id => {
+          document.getElementById(`sticker-c-${id}`)?.classList.add('active');
+          document.getElementById(`sticker-t-${id}`)?.classList.add('active');
+        });
+        document.getElementById('happy-msg')?.classList.add('visible');
+        document.getElementById('congrats-msg')?.classList.add('visible');
+      }, 350);
+    }
+  }
+});
 
 /* ═══════════════════════════════════════
    CANVAS TRAIL
