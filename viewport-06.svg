@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="140" viewBox="0 0 100 127">
+  <rect x="0" y="0" width="100" height="127" fill="rgba(255,255,255,0.85)"/>
+  <rect x="0" y="0" width="100" height="127" fill="none" stroke="#111" stroke-width="0.75"/>
+  <line x1="25" y1="0" x2="25" y2="127" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="50" y1="0" x2="50" y2="127" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="75" y1="0" x2="75" y2="127" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="0" y1="31.7" x2="100" y2="31.7" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="0" y1="63.5" x2="100" y2="63.5" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="0" y1="95.2" x2="100" y2="95.2" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <circle cx="50" cy="55" r="2" fill="#7bc8bc"/>
+  <circle cx="50" cy="55" r="15" fill="none" stroke="#7bc8bc" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="50" cy="55" r="28" fill="none" stroke="#8aad8a" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.5"/>
+  <circle cx="50" cy="55" r="42" fill="none" stroke="#111" stroke-width="0.5" stroke-dasharray="1 4" opacity="0.4"/>
+  <path d="M 5 25 Q 27.5 15 50 25 T 95 25" fill="none" stroke="#111" stroke-width="0.4" opacity="0.3"/>
+  <path d="M 5 85 Q 27.5 75 50 85 T 95 85" fill="none" stroke="#111" stroke-width="0.4" opacity="0.3"/>
+  <text x="50" y="112" font-family="'Space Mono', monospace" font-size="4.5" fill="#111" opacity="0.5" text-anchor="middle">f(x,t) = A·sin(kx - ωt)</text>
+  <text x="5" y="12" font-family="'Space Mono', monospace" font-size="5" fill="#111" opacity="0.45">06/WAVE-PROPAGATION</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 100 100">
+  <rect x="0" y="0" width="100" height="100" fill="rgba(255,255,255,0.85)"/>
+  <rect x="0" y="0" width="100" height="100" fill="none" stroke="#111" stroke-width="0.75"/>
+  <line x1="25" y1="0" x2="25" y2="100" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="50" y1="0" x2="50" y2="100" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="75" y1="0" x2="75" y2="100" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="0" y1="25" x2="100" y2="25" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="0" y1="50" x2="100" y2="50" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="0" y1="75" x2="100" y2="75" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#111" stroke-width="0.8"/>
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#111" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.6"/>
+  <circle cx="50" cy="50" r="28" fill="none" stroke="#7bc8bc" stroke-width="0.5" opacity="0.5"/>
+  <circle cx="50" cy="50" r="20" fill="none" stroke="#111" stroke-width="0.5" stroke-dasharray="1 2" opacity="0.4"/>
+  <line x1="8" y1="50" x2="92" y2="50" stroke="#111" stroke-width="0.4" opacity="0.3"/>
+  <line x1="50" y1="8" x2="50" y2="92" stroke="#111" stroke-width="0.4" opacity="0.3"/>
+  <line x1="20" y1="20" x2="80" y2="80" stroke="#111" stroke-width="0.4" stroke-dasharray="1 3" opacity="0.3"/>
+  <circle cx="50" cy="30" r="4" fill="#8aad8a" opacity="0.8"/>
+  <circle cx="50" cy="70" r="4" fill="#8aad8a" opacity="0.8"/>
+  <circle cx="30" cy="50" r="4" fill="#7bc8bc" opacity="0.8"/>
+  <circle cx="70" cy="50" r="4" fill="#7bc8bc" opacity="0.8"/>
+  <circle cx="50" cy="50" r="5" fill="none" stroke="#111" stroke-width="0.8"/>
+  <text x="5" y="12" font-family="'Space Mono', monospace" font-size="5" fill="#111" opacity="0.45">01/TOPOLOGY</text>
+  <text x="95" y="94" font-family="'Space Mono', monospace" font-size="5" fill="#111" opacity="0.45" text-anchor="end">r=60px θ=45°</text>
+</svg>

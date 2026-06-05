@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="110" viewBox="0 0 120 88">
+  <rect x="0" y="0" width="120" height="88" fill="rgba(255,255,255,0.85)"/>
+  <rect x="0" y="0" width="120" height="88" fill="none" stroke="#111" stroke-width="0.75"/>
+  <line x1="30" y1="0" x2="30" y2="88" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="60" y1="0" x2="60" y2="88" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="90" y1="0" x2="90" y2="88" stroke="#111" stroke-width="0.35" stroke-dasharray="1 3" opacity="0.22"/>
+  <line x1="0" y1="22" x2="120" y2="22" stroke="#111" stroke-width="0.8"/>
+  <line x1="0" y1="44" x2="120" y2="44" stroke="#111" stroke-width="0.8" stroke-dasharray="3 3"/>
+  <line x1="0" y1="66" x2="120" y2="66" stroke="#111" stroke-width="0.8"/>
+  <g stroke="#111" stroke-width="0.45" opacity="0.3">
+    <line x1="-10" y1="10" x2="10" y2="-10"/>
+    <line x1="0" y1="20" x2="20" y2="0"/>
+    <line x1="10" y1="30" x2="30" y2="10"/>
+    <line x1="20" y1="40" x2="40" y2="20"/>
+    <line x1="30" y1="50" x2="50" y2="30"/>
+    <line x1="40" y1="60" x2="60" y2="40"/>
+    <line x1="50" y1="70" x2="70" y2="50"/>
+    <line x1="60" y1="80" x2="80" y2="60"/>
+    <line x1="70" y1="90" x2="90" y2="70"/>
+    <line x1="80" y1="100" x2="100" y2="80"/>
+    <line x1="90" y1="110" x2="110" y2="90"/>
+    <line x1="100" y1="120" x2="120" y2="100"/>
+    <line x1="110" y1="130" x2="130" y2="110"/>
+  </g>
+  <g fill="#111" opacity="0.35">
+    <circle cx="10" cy="33" r="1"/>
+    <circle cx="25" cy="33" r="1"/>
+    <circle cx="40" cy="33" r="1"/>
+    <circle cx="55" cy="33" r="1"/>
+    <circle cx="70" cy="33" r="1"/>
+    <circle cx="85" cy="33" r="1"/>
+    <circle cx="100" cy="33" r="1"/>
+    <circle cx="115" cy="33" r="1"/>
+    <circle cx="17.5" cy="38" r="1"/>
+    <circle cx="32.5" cy="38" r="1"/>
+    <circle cx="47.5" cy="38" r="1"/>
+    <circle cx="62.5" cy="38" r="1"/>
+    <circle cx="77.5" cy="38" r="1"/>
+    <circle cx="92.5" cy="38" r="1"/>
+    <circle cx="107.5" cy="38" r="1"/>
+  </g>
+  <g stroke="#7bc8bc" stroke-width="0.55" opacity="0.5" fill="none">
+    <line x1="15" y1="44" x2="15" y2="66" stroke-dasharray="2 2"/>
+    <line x1="35" y1="44" x2="35" y2="66" stroke-dasharray="2 2"/>
+    <line x1="55" y1="44" x2="55" y2="66" stroke-dasharray="2 2"/>
+    <line x1="75" y1="44" x2="75" y2="66" stroke-dasharray="2 2"/>
+    <line x1="95" y1="44" x2="95" y2="66" stroke-dasharray="2 2"/>
+    <line x1="115" y1="44" x2="115" y2="66" stroke-dasharray="2 2"/>
+  </g>
+  <text x="5" y="12" font-family="'Space Mono', monospace" font-size="5" fill="#111" opacity="0.45">02/CROSS-SECTION</text>
+  <text x="5" y="20" font-family="'Space Mono', monospace" font-size="4.5" fill="#111" opacity="0.3">L3: TOPPERS</text>
+  <text x="5" y="42" font-family="'Space Mono', monospace" font-size="4.5" fill="#111" opacity="0.3">L2: MATRIX CREAM</text>
+  <text x="5" y="64" font-family="'Space Mono', monospace" font-size="4.5" fill="#111" opacity="0.3">L1: SPONGE BASE</text>
+</svg>
