@@ -334,3 +334,73 @@ body {
 .viewport-box {
   background: rgba(255, 255, 255, 0.85);
 }
+
+/* ══════════════ MOBILE LAYOUT ══════════════
+   모바일(세로폰): 위=p.01 케이크 / 아래=p.02 도면
+   데스크탑은 기존 가로 레이아웃 그대로 유지
+═══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* p.01 — 위쪽 절반 */
+  .left {
+    width: 100%;
+    height: 50vh;
+    border-right: none;
+    border-bottom: 1px solid rgba(17,17,17,0.28);
+  }
+
+  /* p.02 — 아래쪽 절반 */
+  .right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* 케이크 SVG: 높이 기준으로 축소 */
+  #cake-svg {
+    width: auto;
+    height: 36vh;
+  }
+
+  /* 좌상단 인덱스 위치 보정 */
+  .left-idx {
+    top: 1rem;
+    left: 1.2rem;
+  }
+
+  /* CLICK THE CANDLE 힌트 위치 보정 */
+  .candle-hint {
+    top: calc(50% - 155px);
+  }
+
+  /* 좌하단 좌표 표시 보정 */
+  .left-coord {
+    bottom: 0.6rem;
+    left: 1.2rem;
+  }
+
+  /* 닉네임 입력 위치 — 모바일에서 위쪽으로 */
+  #nickname-wrap {
+    top: 16%;
+    right: 1rem;
+  }
+  #happy-msg {
+    top: calc(16% + 1.6rem);
+    right: 1rem;
+  }
+  #congrats-msg {
+    top: calc(16% + 2.8rem);
+    right: 1rem;
+  }
+
+  /* 모바일은 터치 기기라 커서·잔상 숨김 */
+  #cursor {
+    display: none;
+  }
+  #trail {
+    display: none;
+  }
+}
