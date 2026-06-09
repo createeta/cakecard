@@ -1,4 +1,14 @@
 /* ═══════════════════════════════════════
+   MOBILE: p.02 SVG viewBox 좁혀서 BIRTH/DAY 크게 표시
+═══════════════════════════════════════ */
+(function initMobileView() {
+  if (window.innerWidth <= 768) {
+    const mapSvg = document.querySelector('.map-svg');
+    if (mapSvg) mapSvg.setAttribute('viewBox', '0 30 540 490');
+  }
+})();
+
+/* ═══════════════════════════════════════
    CURSOR
 ═══════════════════════════════════════ */
 const cursor = document.getElementById('cursor');

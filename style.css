@@ -362,7 +362,7 @@ body {
   /* 케이크 SVG: 높이 기준으로 축소 */
   #cake-svg {
     width: auto;
-    height: 36vh;
+    height: 24vh;
   }
 
   /* 좌상단 인덱스 위치 보정 */
@@ -371,9 +371,9 @@ body {
     left: 1.2rem;
   }
 
-  /* CLICK THE CANDLE 힌트 위치 보정 */
+  /* CLICK THE CANDLE 힌트: 케이크 촛불 바로 위 위치로 */
   .candle-hint {
-    top: calc(50% - 155px);
+    top: calc(50% - 140px);
   }
 
   /* 좌하단 좌표 표시 보정 */
@@ -382,17 +382,17 @@ body {
     left: 1.2rem;
   }
 
-  /* 닉네임 입력 위치 — 모바일에서 위쪽으로 */
+  /* 닉네임 입력 위치 — 박스 위로 올려서 겹침 해결 */
   #nickname-wrap {
-    top: 16%;
+    top: 8%;
     right: 1rem;
   }
   #happy-msg {
-    top: calc(16% + 1.6rem);
+    top: calc(8% + 1.6rem);
     right: 1rem;
   }
   #congrats-msg {
-    top: calc(16% + 2.8rem);
+    top: calc(8% + 2.8rem);
     right: 1rem;
   }
 
