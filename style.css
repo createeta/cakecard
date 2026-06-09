@@ -371,9 +371,9 @@ body {
     left: 1.2rem;
   }
 
-  /* CLICK THE CANDLE 힌트: 케이크 촛불 바로 위에 오도록 내림 */
+  /* CLICK THE CANDLE 힌트: 촛불 위로 충분히 올려서 겹침 방지 */
   .candle-hint {
-    top: calc(50% - 79px);
+    top: calc(50% - 120px);
   }
 
   /* 좌하단 좌표 표시 보정 */
@@ -382,33 +382,24 @@ body {
     left: 1.2rem;
   }
 
-  /* BIRTH/DAY 스티커: CSS transform으로 1.4배 크게 */
-  #birth-group {
-    transform: scale(1.4);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-  #day-group {
-    transform: scale(1.4);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  /* 닉네임 입력: 모든 박스 아래 패널 하단에 배치 (겹침 완전 해결) */
+  /* 닉네임: p.02 텍스트 근처 우측, 박스들과 x축 분리 */
   #nickname-wrap {
-    top: auto;
-    bottom: 6px;
-    right: 1rem;
+    top: 29%;
+    bottom: auto;
+    right: 0.5rem;
+  }
+  #nickname-input {
+    width: 80px;
   }
   #happy-msg {
-    top: auto;
-    bottom: calc(6px + 1.6rem);
-    right: 1rem;
+    top: calc(29% + 1.6rem);
+    bottom: auto;
+    right: 0.5rem;
   }
   #congrats-msg {
-    top: auto;
-    bottom: calc(6px + 3.2rem);
-    right: 1rem;
+    top: calc(29% + 3.0rem);
+    bottom: auto;
+    right: 0.5rem;
   }
 
   /* 모바일은 터치 기기라 커서·잔상 숨김 */
